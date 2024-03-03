@@ -1,0 +1,167 @@
+@media screen and (max-width: 575.98px) {
+  .appIcon {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .petApp {
+    font-size: 1rem;
+  }
+  .containerIsActive {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #6d7fcc;
+    margin-top: -0.5rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem !important;
+  }
+  .containerNotActive {
+    margin-top: -0.5rem;
+    width: 100%;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem !important;
+  }
+}
+/* sm */
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+  .appIcon {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .petApp {
+    font-size: 1rem;
+  }
+  .containerIsActive {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #6d7fcc;
+    margin-top: -0.5rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem !important;
+  }
+  .containerNotActive {
+    margin-top: -0.5rem;
+    width: 100%;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem !important;
+  }
+}
+/* md */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  .appIcon {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  .petApp {
+    font-size: 1.2rem;
+  }
+  .containerIsActive {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #6d7fcc;
+    margin-top: -0.5rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem !important;
+  }
+  .containerNotActive {
+    margin-top: -0.5rem;
+    width: 100%;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem !important;
+  }
+}
+/* lg */
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .appIcon {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .petApp {
+    font-size: 1.5rem;
+  }
+  .containerIsActive {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #6d7fcc;
+    margin-top: -0.5rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem !important;
+  }
+  .containerNotActive {
+    margin-top: -0.5rem;
+    width: 100%;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem !important;
+  }
+}
+/* xl */
+@media screen and (min-width: 1200px) and (max-width: 1399.98px) {
+  .appIcon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .petApp {
+    font-size: 2rem;
+  }
+  .containerIsActive {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #6d7fcc;
+    margin-top: -0.5rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem !important;
+  }
+  .containerNotActive {
+    margin-top: -0.5rem;
+    width: 100%;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem !important;
+  }
+}
+/* xxl */
+@media screen and (min-width: 1400px) {
+  .appIcon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .petApp {
+    font-size: 2rem;
+  }
+  .containerIsActive {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #6d7fcc;
+    margin-top: -0.5rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem !important;
+  }
+  .containerNotActive {
+    margin-top: -0.5rem;
+    width: 100%;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem !important;
+  }
+}
+.containerList {
+  background-color: #6d7fcc;
+  margin-top: -0.5rem;
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+}
