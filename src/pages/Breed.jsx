@@ -159,7 +159,7 @@ const Breed = () => {
           </thead>
           <tbody id="tbody">
             {breedList.map((item, i) => (
-              <tr>
+              <tr key={item._id}>
                 <td>{i}</td>
                 <td>{item.petBreed}</td>
                 <td>
