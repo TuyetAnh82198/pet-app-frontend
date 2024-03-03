@@ -127,10 +127,7 @@ const Edit = () => {
     setVac(foundPet.vac);
     setWeight(foundPet.weight);
 
-    const newArr = breedList.filter(
-      (item) =>
-        item.petType === foundPet.type && item.petBreed !== foundPetBreed
-    );
+    const newArr = breedList.filter((item) => item.petType === foundPet.type);
     setBreedListForSelect(newArr);
   };
 
@@ -208,7 +205,6 @@ const Edit = () => {
               <Form.Select
                 onChange={(e) => {
                   setType(e.target.value);
-
                   const idGotFromPetList = typeList.find(
                     (item) => item.petType === e.target.value
                   )
@@ -273,12 +269,14 @@ const Edit = () => {
             </Form.Label>
             <Col sm="3">
               <Form.Select onChange={(e) => setBreed(e.target.value)}>
-                <option value={breed}>{breed}</option>
-                {breedListForSelect.map((breed) => (
-                  <option key={breed._id} value={breed.petBreed}>
-                    {breed.petBreed}
-                  </option>
-                ))}
+                {breedListForSelect
+                  .filter((item) => item !== breed)
+                  .sort((a, b) => a - b)
+                  .map((breed) => (
+                    <option key={breed._id} value={breed.petBreed}>
+                      {breed.petBreed}
+                    </option>
+                  ))}
               </Form.Select>
             </Col>
           </Form.Group>
