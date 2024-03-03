@@ -66,10 +66,10 @@ const Search = () => {
   //hàm tìm kiếm thú cưng
   const submitForm = () => {
     let newArr = [];
-    if (idInput.current.value.trim().length === 0) {
+    if (idInput.current.value.trim().length !== 0) {
       newArr = petList.filter((pet) => pet._id.includes(idInput.current.value));
     }
-    if (nameInput.current.value.trim().length === 0) {
+    if (nameInput.current.value.trim().length !== 0) {
       newArr = petList.filter((pet) =>
         pet.name.includes(nameInput.current.value)
       );
