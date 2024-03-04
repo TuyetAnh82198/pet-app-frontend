@@ -155,7 +155,7 @@ const Breed = () => {
               <th className="col-1">#</th>
               <th className="col-5">Breed</th>
               <th className="col-3">Type</th>
-              <th className="col-3">Action</th>
+{/*               <th className="col-3">Action</th> */}
             </tr>
           </thead>
           <tbody id="tbody">
