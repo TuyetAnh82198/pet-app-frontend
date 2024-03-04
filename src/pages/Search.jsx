@@ -67,11 +67,13 @@ const Search = () => {
   const submitForm = () => {
     let newArr = [];
     if (idInput.current.value.trim().length !== 0) {
-      newArr = petList.filter((pet) => pet._id.includes(idInput.current.value));
+      newArr = petList.filter((pet) =>
+        pet._id.toLowerCase().includes(idInput.current.value.toLowerCase())
+      );
     }
     if (nameInput.current.value.trim().length !== 0) {
       newArr = petList.filter((pet) =>
-        pet.name.includes(nameInput.current.value)
+        pet.name.toLowerCase().includes(nameInput.current.value.toLowerCase())
       );
     }
     if (typeInput.current.value !== "Select Type") {
