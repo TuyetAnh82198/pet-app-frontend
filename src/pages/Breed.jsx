@@ -71,20 +71,20 @@ const Breed = () => {
       .catch((err) => console.log(err));
   };
 
-  //hàm xóa breed và cập nhật lại danh sách breed
-  const deleteBreed = (id) => {
-    const isDeleted = window.confirm("Are you sure?");
-    if (isDeleted) {
-      fetch(`${process.env.REACT_APP_BACKEND}/breed/delete/${id}`)
-        .then((response) => response.json())
-        .then((data) => {
-          if (data.message === "Deleted!") {
-            alert("Deleted!");
-          }
-        })
-        .catch((err) => console.log(err));
-    }
-  };
+  // //hàm xóa breed và cập nhật lại danh sách breed
+  // const deleteBreed = (id) => {
+  //   const isDeleted = window.confirm("Are you sure?");
+  //   if (isDeleted) {
+  //     fetch(`${process.env.REACT_APP_BACKEND}/breed/delete/${id}`)
+  //       .then((response) => response.json())
+  //       .then((data) => {
+  //         if (data.message === "Deleted!") {
+  //           alert("Deleted!");
+  //         }
+  //       })
+  //       .catch((err) => console.log(err));
+  //   }
+  // };
 
   useEffect(() => {
     socket.connect();
@@ -168,14 +168,14 @@ const Breed = () => {
                     ? typeList.find((type) => type._id === item.petType).petType
                     : ""}
                 </td>
-                <td>
+{/*                 <td>
                   <Button
                     onClick={() => deleteBreed(item._id)}
                     variant="danger"
                   >
                     Delete
                   </Button>
-                </td>
+                </td> */}
               </tr>
             ))}
           </tbody>
