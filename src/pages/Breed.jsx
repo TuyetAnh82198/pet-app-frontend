@@ -60,6 +60,7 @@ const Breed = () => {
       .then((data) => {
         if (data.message === "Added!") {
           alert("Added!");
+          breedInput.current.value = "";
           // console.log(data.result);
         } else if (data.message === "Breed must be unique!") {
           alert("Breed must be unique!");
