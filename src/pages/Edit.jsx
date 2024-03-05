@@ -269,8 +269,9 @@ const Edit = () => {
             </Form.Label>
             <Col sm="3">
               <Form.Select onChange={(e) => setBreed(e.target.value)}>
+                <option>{breed}</option>
                 {breedListForSelect
-                  .filter((item) => item !== breed)
+                  .filter((item) => item.petBreed !== breed)
                   .sort((a, b) => a - b)
                   .map((breed) => (
                     <option key={breed._id} value={breed.petBreed}>
