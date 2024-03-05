@@ -161,7 +161,7 @@ const Breed = () => {
           <tbody id="tbody">
             {breedList.map((item, i) => (
               <tr key={item._id}>
-                <td>{i}</td>
+                <td>{i+1}</td>
                 <td>{item.petBreed}</td>
                 <td>
                   {typeList.find((type) => type._id === item.petType)
